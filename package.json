@@ -13,10 +13,10 @@
   "description": "MCP (Model Context Protocol) server starter template ",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mnove/mcp-starter.git"
+    "url": "git+https://github.com/mnove/mcp-server-starter.git"
   },
   "bugs": {
-    "url": "https://github.com/mnove/mcp-starter/issues"
+    "url": "https://github.com/mnove/mcp-server-starter/issues"
   },
   "scripts": {
     "build": "tsup src/server.ts --format esm,cjs --dts --out-dir dist",
