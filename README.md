@@ -2,7 +2,7 @@
 
 A comprehensive starter template for building **Model Context Protocol (MCP) servers**, specifically designed for UI libraries and component registries. This template provides a robust foundation for creating MCP servers that can fetch, categorize, and provide component information to AI assistants like Claude.
 
-## Real-world example?
+## 🌎 Real-world example?
 
 Check out the [stackzero-labs/mcp](https://github.com/stackzero-labs/mcp) which uses this template to expose its UI components and blocks to AI models. You can also checkout the UI referenced project [stackzero/ui](https://github.com/stackzero-labs/ui)
 
@@ -203,6 +203,11 @@ export const componentCategories = {
 
 The server will automatically create tools for new categories.
 
+### Why categories?
+
+Categories help organize components logically, making it easier for AI assistants to find and suggest relevant components based.
+Also, some models and IDE have a limit on the number of tools they can handle, so categorizing helps to keep the number of tools manageable.
+
 ## 📖 Registry Format
 
 Your component registry should follow this structure:
@@ -260,6 +265,8 @@ pnpm run build
 
 ### As an NPM Package
 
+You can also publish this template as an NPM package for easy installation in other projects.
+
 1. Update `package.json` with your details
 2. Build and publish:
 
@@ -270,11 +277,7 @@ npm publish
 
 ## 🤝 Contributing
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+See [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to contribute to this project.
 
 ## 📄 License
 
