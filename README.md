@@ -2,7 +2,7 @@
 
 A comprehensive starter template for building **Model Context Protocol (MCP) servers**, specifically designed for UI libraries and component registries. This template provides a robust foundation for creating MCP servers that can fetch, categorize, and provide component information to AI assistants like Claude.
 
-## 🌎 Real-world example?
+## 🌎 Real world example?
 
 Check out the [stackzero-labs/mcp](https://github.com/stackzero-labs/mcp) which uses this template to expose its UI components and blocks to AI models. You can also checkout the UI referenced project [stackzero/ui](https://github.com/stackzero-labs/ui)
 
