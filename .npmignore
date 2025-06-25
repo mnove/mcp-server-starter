@@ -1,0 +1,32 @@
+# Source files
+src/
+tsconfig.json
+tsconfig.tsbuildinfo
+
+# Development files
+.git/
+.gitignore
+.DS_Store
+
+# Node modules and lock files
+node_modules/
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+
+# Development and testing
+*.log
+coverage/
+.nyc_output/
+.env
+.env.local
+.env.*.local
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build artifacts (keep only what's in "files" array)
+# Everything else will be excluded by default since we specified "files": ["dist"]

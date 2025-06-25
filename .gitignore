@@ -1,0 +1,10 @@
+.DS_Store
+dist/
+node_modules/
+
+tsconfig.tsbuildinfo
+.husky/_
+
+.env
+.env.*
+

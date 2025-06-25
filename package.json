@@ -1,0 +1,55 @@
+{
+  "name": "mcp-starter",
+  "version": "0.1.0",
+  "author": "mnove",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ai",
+    "claude",
+    "server"
+  ],
+  "license": "MIT",
+  "description": "MCP (Model Context Protocol) server starter template ",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mnove/mcp-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mnove/mcp-starter/issues"
+  },
+  "scripts": {
+    "build": "tsup src/server.ts --format esm,cjs --dts --out-dir dist",
+    "build:old": "tsc && shx chmod +x dist/*.js",
+    "start": "node dist/server.js",
+    "dev": "tsx watch src/server.ts",
+    "inspect": "mcp-inspector node dist/server.js",
+    "prepublishOnly": "pnpm run build",
+    "prepare": "husky"
+  },
+  "type": "module",
+  "main": "./dist/server.js",
+  "module": "./dist/server.js",
+  "types": "./dist/server.d.ts",
+  "bin": {
+    "mcp": "./dist/server.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.13.1",
+    "zod": "^3.25.67"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@modelcontextprotocol/inspector": "^0.14.2",
+    "@types/node": "^22.14.1",
+    "husky": "^9.1.7",
+    "shx": "^0.4.0",
+    "tsup": "^8.5.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  }
+}
