@@ -118,6 +118,7 @@ pnpm run inspect
 ```
 
 This opens the MCP Inspector to test your server tools interactively.
+Make sure you auth token is present in the inspector url, otherwise the connection will fail. 
 
 ## 📚 Available Tools
 
@@ -208,6 +209,8 @@ The server will automatically create tools for new categories.
 Categories help organize components logically, making it easier for AI assistants to find and suggest relevant components based.
 Also, some models and IDE have a limit on the number of tools they can handle, so categorizing helps to keep the number of tools manageable.
 
+You can customize your categories however you want, depending on your cases. If you do not have many tools, then you could also consider not using categories at all.
+
 ## 📖 Registry Format
 
 Your component registry should follow this structure:
@@ -290,6 +293,7 @@ Marcello - [@mnove](https://github.com/mnove)
 ## 🙏 Acknowledgments
 
 - Built with [Model Context Protocol SDK](https://github.com/modelcontextprotocol/sdk)
+- Originally inspired by magic-ui MCP server
 - Inspired by the need for better AI-component integration
 - Thanks to the MCP community for their contributions
 
